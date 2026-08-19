@@ -28,7 +28,7 @@ const genPlate = () => {
   return `${st}${d}${l}${n}`;
 };
 
-export default function IntersectionSimulator({ juryDemoPhase }) {
+const IntersectionSimulator = function IntersectionSimulator({ juryDemoPhase }) {
   const canvasRef = useRef(null);
   const reqRef = useRef(null);
   const [isRunning, setIsRunning] = useState(true);
@@ -412,3 +412,4 @@ export default function IntersectionSimulator({ juryDemoPhase }) {
     </div>
   );
 }
+export default React.memo(IntersectionSimulator);

@@ -23,7 +23,7 @@ function BoundsFitter({ bounds }) {
   return null;
 }
 
-export default function RouteMap({ origin, destination, onRouteReady }) {
+const RouteMap = function RouteMap({ origin, destination, onRouteReady }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [legsData, setLegsData] = useState([]);
@@ -185,3 +185,4 @@ export default function RouteMap({ origin, destination, onRouteReady }) {
     </div>
   );
 }
+export default React.memo(RouteMap);
