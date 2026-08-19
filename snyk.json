@@ -1,0 +1,4 @@
+{
+  "$schema": "https://raw.githubusercontent.com/snyk/snyk/master/config/schema.json",
+  "api": "1.0.0"
+}

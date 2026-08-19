@@ -51,22 +51,22 @@ export default function App() {
   };
 
   return (
-    <main role="main" className="min-h-screen">
+    <div className="min-h-screen">
       {/* Premium Glassmorphism Navbar */}
       <nav className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="relative flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl shadow-lg shadow-indigo-500/30">
               <Activity className="w-6 h-6 text-white" />
-              <div className="absolute top-0 right-0 w-3 h-3 bg-teal-400 rounded-full border-2 border-white animate-pulse"></main>
-            </main>
+              <div className="absolute top-0 right-0 w-3 h-3 bg-teal-400 rounded-full border-2 border-white animate-pulse"></div>
+            </div>
             <div>
                <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
                  AetherPulse
                </h1>
-               <div className="text-[10px] font-bold tracking-widest uppercase text-indigo-600">Smart Mobility Platform</main>
-            </main>
-          </main>
+               <div className="text-[10px] font-bold tracking-widest uppercase text-indigo-600">Smart Mobility Platform</div>
+            </div>
+          </div>
           
           <button 
             onClick={runJuryDemo}
@@ -79,7 +79,7 @@ export default function App() {
           >
             {demoState.active ? (
               <>
-                <div className="w-4 h-4 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin"></main>
+                <div className="w-4 h-4 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
                 Running Jury Demo (Phase {demoState.phase}/3)
               </>
             ) : (
@@ -89,7 +89,7 @@ export default function App() {
               </>
             )}
           </button>
-        </main>
+        </div>
         
         {/* Sleek Tab Navigation */}
         <div className="max-w-7xl mx-auto px-6 overflow-x-auto no-scrollbar">
@@ -113,8 +113,8 @@ export default function App() {
                 </button>
               );
             })}
-          </main>
-        </main>
+          </div>
+        </div>
       </nav>
 
       <main className="max-w-7xl mx-auto px-6 py-8">
@@ -125,23 +125,23 @@ export default function App() {
           {activeTab === 'architecture' && <SystemArchitecture />}
           {activeTab === 'camera' && <LiveCameraAnalytics />}
           {activeTab === 'twin' && <DigitalTwinAnalytics />}
-        </main>
+        </div>
       </main>
 
       {/* Verified Modal */}
       {demoState.showVerifiedModal && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 bg-slate-900/60 backdrop-blur-sm animate-fadeIn">
           <div className="w-full max-w-md bg-white rounded-3xl p-8 shadow-2xl relative animate-slideUp text-center overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-500 to-teal-400"></main>
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-500 to-teal-400"></div>
             <button 
               onClick={() => setDemoState(p => ({ ...p, showVerifiedModal: false }))}
               className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2 bg-slate-50 rounded-full transition-colors"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
             <div className="w-20 h-20 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
               <CheckCircle2 className="w-10 h-10 text-indigo-600" />
-            </main>
+            </div>
             <h3 className="text-2xl font-black text-slate-900 mb-2">Demo Complete</h3>
             <p className="text-slate-500 font-medium mb-8">
               AetherPulse successfully demonstrated dynamic traffic optimization and seamless multi-modal handoff. 
@@ -154,9 +154,9 @@ export default function App() {
             >
               Continue Exploring
             </button>
-          </main>
-        </main>
+          </div>
+        </div>
       )}
-    </main>
+    </div>
   );
 }
