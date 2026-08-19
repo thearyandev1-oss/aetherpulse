@@ -21,7 +21,7 @@
     "react-dom": "^19.2.8",
     "react-leaflet": "^5.0.0",
     "recharts": "^3.10.1",
-    "@google/genai": "^0.1.1",
+    "@google/genai": "^2.17.1",
     "@googlemaps/react-wrapper": "^1.1.35",
     "helmet": "^7.1.0",
     "cors": "^2.8.5",
