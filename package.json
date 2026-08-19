@@ -54,5 +54,12 @@
     "lighthouse": "^11.4.0",
     "prettier": "^3.2.5",
     "husky": "^9.0.11"
-  }
+  },
+  "description": "AetherPulse - Driving Societal Benefit through AI Traffic Optimization",
+  "keywords": [
+    "Societal Benefit",
+    "Smart City",
+    "AI",
+    "Traffic"
+  ]
 }
