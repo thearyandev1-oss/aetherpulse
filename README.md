@@ -1,16 +1,20 @@
 <div align="center">
-  
+<div align="center">
+
 # 🚦 AetherPulse
 ### Next-Generation Smart Mobility & Digital Twin Platform
 
+[![Netlify Status](https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://vocal-salamander-0eff6e.netlify.app/)
 [![React](https://img.shields.io/badge/React-18.x-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Leaflet](https://img.shields.io/badge/Leaflet-Maps-199900?style=for-the-badge&logo=leaflet)](https://leafletjs.com/)
 
+**🌐 Interactive Production Deployment:** [vocal-salamander-0eff6e.netlify.app](https://vocal-salamander-0eff6e.netlify.app/)
+
 AetherPulse is a comprehensive Smart Mobility Platform designed to eliminate urban congestion. By combining **Edge AI Dynamic Signal Optimization (EADSO)**, live digital twin simulations, and seamless multi-modal commuter handoffs, AetherPulse cuts commute times, reduces CO₂ emissions, and saves money.
 
-[Explore the Architecture](#system-architecture) • [Installation](#getting-started) • [Key Features](#key-features)
+[Explore the Architecture](#-system-architecture) • [Key Features](#-key-features) • [Installation](#-getting-started)
 
 </div>
 
@@ -22,9 +26,11 @@ AetherPulse is a comprehensive Smart Mobility Platform designed to eliminate urb
 * **🧠 EADSO Algorithm:** Edge AI Dynamic Signal Optimization actively analyzes vehicle density and adjusts traffic lights on the fly to prevent bottlenecks.
 * **🗺️ Smart Commuter Handoffs:** Generates multi-modal travel routes using OpenStreetMap, seamlessly combining buses, trains, and smart cabs for the optimal "last-mile" journey.
 * **📊 Impact Analytics Dashboard:** Live tracking of CO₂ reduction, time saved, and cost-efficiency compared to traditional single-mode transport.
-* **✨ Glassmorphism UI:** A stunning, modern, highly responsive interface built with Tailwind CSS v4 and Plus Jakarta Sans.
+* **✨ Glassmorphism UI:** A modern, highly responsive interface built with Tailwind CSS v4 and Plus Jakarta Sans.
 
 ---
+
+
 
 ## 🏗️ System Architecture
 
@@ -167,4 +173,6 @@ aetherpulse/
 <div align="center">
   <p>Built with ❤️ for a smarter, greener, and faster tomorrow.</p>
 </div>
+
 # aetherpulse
+
