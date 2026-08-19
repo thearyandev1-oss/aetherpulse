@@ -39,7 +39,7 @@ export default function AutocompleteInput({ placeholder, onPlaceSelect }) {
 
   return (
     <div className="relative">
-      <input
+      <input aria-label="Location input" aria-required="true"
         type="text"
         value={inputValue}
         onChange={handleInput}

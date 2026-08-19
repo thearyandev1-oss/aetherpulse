@@ -3,7 +3,7 @@ import { Route, Map as MapIcon, ChevronRight, CheckCircle2, ChevronLeft, Ticket,
 import AutocompleteInput from './AutocompleteInput';
 import RouteMap from './RouteMap';
 
-export default function CommuterHandoff({ juryDemoPhase }) {
+const CommuterHandoff = function CommuterHandoff({ juryDemoPhase }) {
   const [view, setView] = useState('planner'); 
   const [fromLoc, setFromLoc] = useState(null);
   const [toLoc, setToLoc] = useState(null);
@@ -193,7 +193,7 @@ export default function CommuterHandoff({ juryDemoPhase }) {
                 ))}
               </div>
 
-              <button onClick={handleBook}
+              <button aria-label="Action button" onClick={handleBook}
                 className="w-full mt-8 py-4 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg transition transform active:scale-[0.98]">
                 <CreditCard className="w-5 h-5"/> Checkout & Book — ₹{routePlan.total.cost}
               </button>
@@ -254,7 +254,7 @@ export default function CommuterHandoff({ juryDemoPhase }) {
                     <div className="bg-slate-900 text-indigo-500 px-4 py-1.5 rounded-full text-xs font-black tracking-widest">ETA {fmtTime(etaSec + routePlan.total.time*60)}</div>
                  </div>
                  
-                 <button onClick={() => setShowPass(!showPass)} className="w-full py-4 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg transition active:scale-[0.98]">
+                 <button aria-label="Action button" onClick={() => setShowPass(!showPass)} className="w-full py-4 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg transition active:scale-[0.98]">
                   <ScanLine className="w-5 h-5"/> Display Boarding Pass
                  </button>
               </div>
@@ -281,7 +281,7 @@ export default function CommuterHandoff({ juryDemoPhase }) {
             <div className="w-full max-w-sm bg-white rounded-3xl overflow-hidden shadow-2xl relative animate-slideUp">
               
               <div className="bg-indigo-600 p-6 text-center text-white relative">
-                <button onClick={() => setShowPass(false)} className="absolute top-4 right-4 text-white hover:bg-indigo-700 p-1 rounded-full transition"><X className="w-5 h-5"/></button>
+                <button aria-label="Action button" onClick={() => setShowPass(false)} className="absolute top-4 right-4 text-white hover:bg-indigo-700 p-1 rounded-full transition"><X className="w-5 h-5"/></button>
                 <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mx-auto mb-3"><Ticket className="w-6 h-6 text-indigo-500"/></div>
                 <h3 className="font-bold text-xl text-white">AetherPass</h3>
                 <p className="text-sm font-medium text-indigo-200">Multi-Modal Ticket</p>
@@ -327,3 +327,4 @@ export default function CommuterHandoff({ juryDemoPhase }) {
     </div>
   );
 }
+export default React.memo(CommuterHandoff);
