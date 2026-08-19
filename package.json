@@ -21,7 +21,6 @@
     "react-dom": "^19.2.8",
     "react-leaflet": "^5.0.0",
     "recharts": "^3.10.1",
-    "@google/genai": "^0.1.1",
     "@googlemaps/react-wrapper": "^1.1.35",
     "helmet": "^7.1.0",
     "cors": "^2.8.5",
@@ -31,7 +30,8 @@
     "@google-cloud/bigquery": "^7.3.0",
     "@google-cloud/storage": "^7.7.0",
     "i18next": "^23.10.1",
-    "react-i18next": "^14.1.0"
+    "react-i18next": "^14.1.0",
+    "@google/generative-ai": "*"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
