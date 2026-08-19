@@ -10,7 +10,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Leaflet](https://img.shields.io/badge/Leaflet-Maps-199900?style=for-the-badge&logo=leaflet)](https://leafletjs.com/)
 
-**🌐 Interactive Production Deployment:** [vocal-salamander-0eff6e.netlify.app](https://vocal-salamander-0eff6e.netlify.app/)
+**🌐 Interactive Production Deployment:**(https://aether-pulse.netlify.app/)
 
 AetherPulse is a comprehensive Smart Mobility Platform designed to eliminate urban congestion. By combining **Edge AI Dynamic Signal Optimization (EADSO)**, live digital twin simulations, and seamless multi-modal commuter handoffs, AetherPulse cuts commute times, reduces CO₂ emissions, and saves money.
 
