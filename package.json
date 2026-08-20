@@ -41,7 +41,7 @@
     "@vitejs/plugin-react": "^6.0.4",
     "oxlint": "^1.75.0",
     "tailwindcss": "^4.3.3",
-    "vitest": "^1.4.0",
+    "vitest": "^4.1.10",
     "vite": "^8.2.0",
     "@testing-library/react": "^16.0.0",
     "@vitest/coverage-v8": "^1.4.0",
